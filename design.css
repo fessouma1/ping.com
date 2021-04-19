@@ -1,0 +1,54 @@
+#ping{
+    padding-top: 5%;
+}
+#launch{
+    padding-top: 3%;
+    color: cadetblue;
+}
+#form{
+    text-align: center;
+    padding-top: 3%;
+}
+#emailStyle{
+    text-align: right;
+ }
+ #emailInput{
+    border-color: cadetblue;
+    border-radius: 50px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+ }
+ #buttonStyle{
+     text-align: left;
+     cursor: pointer;
+ }
+ #buttonInput{
+     width: 40%;
+     border-radius: 50px;
+     text-align: center;
+     padding: top 5%;
+ }
+ .fa-twitter {
+    background: transparent;
+    color: blue;
+    border-color: blue;
+  }
+  .fa-linkedin {
+    background: transparent;
+    color: blue;
+  }
+  .fa-facebook {
+    background: transparent;
+    color: blue;
+    border-color: blue;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  

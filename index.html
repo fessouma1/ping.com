@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link href="design.css" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,21 +15,67 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body onload="myFunction()">
 
-  We are launching soon!
+   <div class="container">
+     <div class="row">
+      <div class="col align-self-center">
+          <img src="images/logo.svg" class="rounded mx-auto d-block" alt="..." id="ping">
+      </div>
+     </div>
 
-  Subscribe and get notified
+      <div class="row">
+        <div class="col" style="text-align: center;">
+         <h1 id="launch">We are launching <span style="color: black;"><strong>Soon!</strong></span></h1>
+        </div>
+      </div>
 
-  Notify Me
 
-  &copy; Copyright Ping. All rights reserved.
+      <div class="row" style="text-align: center;">
+       <h6 style="padding-top: 1%;">Subscribe and get notified</h6>
+      </div>
+
+      <form >
+      <div class="row" id="form">
+        <div class="col-sm-7" id="emailStyle" style="text-align: right;">
+          <input type="email" id="emailInput" placeholder="Your email address...">
+        </div>
+        <div class="col-sm-5" id="buttonStyle" style="text-align: left;">
+          <button type="submit" class="btn btn-primary" id="buttonInput">Notify me</button>
+        </div>
+
+      </div>
+      </form>
+      <p id="check"></p>
+
+    </div>
+    <div class="container" style="padding: 5%">
+      <img src="images/illustration-dashboard.png" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <div class="container" style="text-align: center; padding-bottom: 2%;">
+      <div class="row">
+      <div class="col-sm-12">
+        <a href="#" class="fa fa-facebook"></a>
+      
+        <a href="#" class="fa fa-twitter"></a>
+      
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </div>
+    
+  
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/fessouma1">Franck Essouma</a>.
     </p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+   
 </body>
 </html>
