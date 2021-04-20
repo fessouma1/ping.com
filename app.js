@@ -1,3 +1,4 @@
+
 let width = window.innerWidth;
 
 const emailStyle = document.querySelector("#emailStyle");
@@ -12,7 +13,9 @@ function myFunction() {
         emailStyle.className="col-sm-12";
         emailStyle.style="text-align: center";
         buttonStyle.className="col-sm-12";
-        buttonStyle.style="text-align: center; padding-top:2%;";
+        buttonStyle.style="text-align: center; padding-top:15%;";
+        mail.style="font-size:15px;color: red; font-family: 'Gill Sans', 'Gill Sans MT'; width:100%; height:50%; paddind:2%; text-align:center"
+        emailInput.style="width: 100%"
 
       }
       else
@@ -20,4 +23,28 @@ function myFunction() {
 
       }
 }
+let mail = document.getElementById("check")
 
+function ValidateEmail(inputText)
+{
+var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+if(inputText.value.match(mailformat))
+{
+  
+  mail.innerHTML = "Your email was valid"
+  event.preventDefault()
+  //event.stopPropagation()
+//document.myForm.formInput.focus();
+
+}
+else
+{
+  mail.innerHTML ="Please provide a valid email address"
+  event.preventDefault()
+  //event.stopPropagation()
+//document.myForm.formInput.focus();
+
+}
+}
+
+$(window).resize(myFunction());
