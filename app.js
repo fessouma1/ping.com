@@ -33,18 +33,11 @@ if(inputText.value.match(mailformat))
   
   mail.innerHTML = "Your email was valid"
   event.preventDefault()
-  //event.stopPropagation()
-//document.myForm.formInput.focus();
 
 }
 else
 {
   mail.innerHTML ="Please provide a valid email address"
   event.preventDefault()
-  //event.stopPropagation()
-//document.myForm.formInput.focus();
-
 }
 }
-
-$(window).resize(myFunction());
